@@ -4,6 +4,8 @@
     height: 100%;
     position: absolute;
     top: 0;
+    //specifies the stack ordre of an element.
+    //an element with greater stack order is always in front of an element with a lower stack order
     z-index: 3;
     min-height: 500px;
 
@@ -50,6 +52,7 @@
                 svg{
                     opacity: 0;
                 }
+                //after hovering change the image back to opaque
                 &:after{
                     opacity: 1;
                 }  
@@ -67,6 +70,7 @@
                 transition: all 0.3s ease-out;
 
             }
+            // select the style every 'a' element that is the first child of its parent
             &:first-child{
                 &::after{
                     content: 'HOME';

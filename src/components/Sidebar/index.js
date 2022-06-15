@@ -12,6 +12,7 @@ const Sidebar =() => (
             <img src={LogoS} alt="logo" />
             <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
         </Link>
+
         <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -30,6 +31,7 @@ const Sidebar =() => (
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
+      
     </div>
 )
 export default Sidebar
