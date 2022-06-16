@@ -9,8 +9,10 @@
     z-index: 3;
     min-height: 500px;
 
+    //only for logo image
     .logo{
         display: block;
+        //put a padding on top and botton to 8px, right and left to 0
         padding: 8px 0;
         img{
             display: block;
@@ -23,6 +25,7 @@
             }
         }
     }
+    //
     nav{
         display:block;
         text-align:center;
@@ -52,7 +55,6 @@
                 svg{
                     opacity: 0;
                 }
-                //after hovering change the image back to opaque
                 &:after{
                     opacity: 1;
                 }  
@@ -70,7 +72,6 @@
                 transition: all 0.3s ease-out;
 
             }
-            // select the style every 'a' element that is the first child of its parent
             &:first-child{
                 &::after{
                     content: 'HOME';
@@ -94,6 +95,29 @@
         a.active{
             svg{
                 color:#ffd700;
+            }
+        }
+    }
+    ul{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li{
+            a{
+                padding: 7px 0;
+                display: block;
+                font-size: 15px;
+                line-height: 16px;
+
+                &:hover svg{
+                    color: #ffd700
+                }
             }
         }
     }
